@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>About Me</h1>
+    <h1>Latar Belakang Pendidikan:</h1>
+    <p>Sekolah Dasar: SD Islam Al-Azhar 6 Jakapermai [2012 - 2018]</p>
+    <p>Sekolah Menengah Pertama: SMP Islam Al-Azhar 8 Kemang Pratama [2018 - 2021]</p>
+    <p>Sekolah Menengah Akhir: SMAS Panglima Besar Soedirman 1 Bekasi [2021 - 2024]</p>
+    <P>Program Studi S1 Teknik Elektro Universitas Padjadjaran [2024 - Sekarang]</P>
+    <p></p>
+    <h1>Film Favorit:</h1>
+    <div style="display: flex; gap: 20px;">
+        <img src="{{ url_for('static', filename='img/linda.jpg') }}" alt="Lindalindalinda" width="300">
+        <img src="{{ url_for('static', filename='img/lily.jpg') }}" alt="LilyChouchou" width="300">
+        <img src="{{ url_for('static', filename='img/gump.jpg') }}" alt="forrestgump" width="300">
+        <img src="{{ url_for('static', filename='img/Jatuh.jpg') }}" alt="JatuhCSDFF" width="300">
+        <img src="{{ url_for('static', filename='img/lovely.jpg') }}" alt="Lovelyman" width="300">
+    </div>
+
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('biodata') }}">Biodata</a> |
+        <a href="{{ url_for('kontak') }}">Kontak</a>
+        <a href="{{ url_for('Project') }}">Project</a>
+    </nav>
+</body>
+</html>

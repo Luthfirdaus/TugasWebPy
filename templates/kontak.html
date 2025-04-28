@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Kontak</h1>
+    <p>Email:luthfi24002@mail.unpad.ac.id </p>
+    <p>Nomor Telepon: 6281311960981 </p>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('biodata') }}">Biodata</a> |
+        <a href="{{ url_for('Aboutme') }}">About Me</a>
+        <a href="{{ url_for('Project') }}">Project</a>
+    </nav>
+</body>
+</html>

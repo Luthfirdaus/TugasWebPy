@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Project</h1>
+
+    <img src="{{ url_for('static', filename='img/memorandum.jpg') }}" alt="Discman" width="300">
+    <img src="{{ url_for('static', filename='img/pcb.jpg') }}" alt="Desauin" width="300">
+
+    <p>Amplifier Speaker Sederhana</p>
+    <p></p>
+    <p>Saya mempunyai hobi mendengarkan musik melalui rilisan fisik dan player lama. Salah satu pemutar musik favorit saya adalah
+        Discman Sony ini karena bentuknya yang ramping dan elegan dan dapat menghasilkan suara yang bagus. Kekurangan dari discman ini 
+        adalah dia tidak mempunyai speaker internal yang mengharuskan saya 
+        menggunakan perangkat audio tambahan seperti earphone atau speaker. Sulitnya mencari speaker yang dapat menyala 
+        menggunakan baterai membuat saya ingin mengaplikasikan hal yang saya sudah pelajari selama 2 semester ini yaitu 
+        membuat speaker saya sendiri. 
+    </p>
+
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('Aboutme') }}">About Me</a> |
+        <a href="{{ url_for('kontak') }}">Kontak</a>
+        <a href="{{ url_for('biodata') }}">Biodata</a>
+    </nav>
+</body>
+</html>
